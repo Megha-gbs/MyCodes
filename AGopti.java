@@ -8,7 +8,7 @@ public class AGopti {
             if(str.charAt(i) == 'G'){
                 add++;
             }
-            if(str.charAt(i) == 'A'){
+            else if(str.charAt(i) == 'A'){
                 count = count + add;
             }
         }
