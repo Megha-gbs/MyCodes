@@ -25,9 +25,11 @@ public class Equilibrium {
         int []ps = prefix(arr,n);
         int c = 0;
         for(int i = 1 ;i<n;i++){
+            if(i != 0){
           if(ps[i-1] == ps[n-1]-ps[i]){
             c++;
           }
+        }
         }
         return c;
     }
